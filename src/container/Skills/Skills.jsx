@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 import ReactTooltip from 'react-tooltip';
 
+import { client, urlFor } from '../../client';
 import { AppWrap, MotionWrap } from '../../wrapper';
-import { urlFor, client } from '../../client';
 import './Skills.scss';
 
 const Skills = () => {
@@ -26,7 +26,6 @@ const Skills = () => {
   return (
     <>
       <h2 className="head-text">Skills & Experiences</h2>
-
       <div className="app__skills-container">
         <motion.div className="app__skills-list">
           {skills.map((skill) => (
