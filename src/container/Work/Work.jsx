@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { AiFillEye, AiFillGithub } from 'react-icons/ai';
+import { AiFillEye, AiFillFile } from 'react-icons/ai';
 import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -87,7 +87,7 @@ const Work = () => {
                     transition={{ duration: 0.25 }}
                     className="app__flex"
                   >
-                    <AiFillGithub />
+                    <AiFillFile />
                   </motion.div>
                 </a>
               </motion.div>

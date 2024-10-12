@@ -2,7 +2,7 @@ import React from 'react';
 
 import './App.scss';
 import { Navbar } from './components';
-import { About, Footer, Header, Skills, Work } from './container';
+import { About, Header, Skills, Work } from './container';
 
 const App = () => (
   <div className="app">
@@ -11,7 +11,7 @@ const App = () => (
     <About />
     <Work />
     <Skills />
-    <Footer />
+    {/* <Footer /> */}
   </div>
 );
 
