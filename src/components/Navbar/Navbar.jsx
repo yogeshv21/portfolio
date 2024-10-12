@@ -1,11 +1,15 @@
-import { motion } from 'framer-motion';
-import React, { useState } from 'react';
-import { HiMenuAlt4, HiX } from 'react-icons/hi';
+// import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+// import { HiMenuAlt4, HiX } from 'react-icons/hi';
 
 import './Navbar.scss';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  console.log(toggle);
+  useEffect(() => {
+    setToggle(true);
+  }, []);
 
   return (
     <nav className="app__navbar">
@@ -21,7 +25,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="app__navbar-menu">
+      {/* <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
         {toggle && (
@@ -41,7 +45,7 @@ const Navbar = () => {
             </ul>
           </motion.div>
         )}
-      </div>
+      </div> */}
     </nav>
   );
 };
